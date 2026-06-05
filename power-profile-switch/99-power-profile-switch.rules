@@ -1,0 +1,9 @@
+# Switch power profile when AC adapter is plugged/unplugged
+# The script checks /sys/class/power_supply/ADP1/online to determine
+# which profile to activate, and idempotently skips if no change needed.
+
+ACTION=="change", SUBSYSTEM=="power_supply", KERNEL=="ADP1", \
+  TAG+="systemd", ENV{SYSTEMD_WANTS}+="power-profile-switch.service"
+
+# Debug: log all power supply events to journal (uncomment for diagnostics)
+# ACTION=="change", SUBSYSTEM=="power_supply", RUN+="/usr/bin/logger -t power-profile-switch 'UDEV event: $env{SUBSYSTEM} $env{POWER_SUPPLY_NAME} online=$env{POWER_SUPPLY_ONLINE}'"

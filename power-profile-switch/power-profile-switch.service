@@ -1,0 +1,17 @@
+[Unit]
+Description=Switch power profile based on AC adapter status
+Documentation=https://wiki.archlinux.org/title/Power_profiles
+RefuseManualStart=no
+RefuseManualStop=yes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/power-profile-switch.sh
+Nice=19
+IOSchedulingClass=idle
+RemainAfterExit=no
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
