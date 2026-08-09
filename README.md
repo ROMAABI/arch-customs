@@ -11,6 +11,7 @@ troubleshooting notes for a **Hyprland / HyDE** setup (host: `abix`, user
 | `power-profile-switch/` | Systemd-based power-profile switching (UDEV rules + timer + Makefile installer) |
 | `wlogout-fix/` | Patch for HyDE `logoutlaunch.sh` — logout menu invisible on scaled displays |
 | `amoled-display-hyprland-enhancement.md` | AMOLED/OLED display tuning notes for Hyprland |
+| `oled-amoled-enhance.frag` | Hyprland screen shader — OLED-style color profile (gamma/contrast/saturation/black-lift) |
 | `liquid-glass-hyprland-theming.md` | Liquid-glass theming notes for Hyprland/HyDE |
 | `lid-close-suspend-analysis.md` | Diagnoses lag after lid-close suspend & resume |
 | `systemd-shutdown-stop-job-fix.md` | Diagnosis of "A Stop Job Is Running…" during shutdown |
