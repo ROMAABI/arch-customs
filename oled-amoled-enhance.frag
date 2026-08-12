@@ -6,19 +6,19 @@
 // NOTE: #version MUST be the very first token (Hyprland glslang requirement).
 
 #ifndef PROFILE_CONTRAST
-    #define PROFILE_CONTRAST 1.04
+    #define PROFILE_CONTRAST 1.06
 #endif
 
 #ifndef PROFILE_GAMMA
-    #define PROFILE_GAMMA 0.95
+    #define PROFILE_GAMMA 0.90
 #endif
 
 #ifndef PROFILE_SATURATION
-    #define PROFILE_SATURATION 1.06
+    #define PROFILE_SATURATION 1.15
 #endif
 
 #ifndef PROFILE_BLACK_LIFT
-    #define PROFILE_BLACK_LIFT 0.005
+    #define PROFILE_BLACK_LIFT 0.010
 #endif
 
 precision highp float;
