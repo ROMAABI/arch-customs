@@ -48,6 +48,9 @@ With these values the menu renders as a readable horizontal bar
 - `layout_1` — wlogout layout
 - `style_1.css` — wlogout stylesheet (uses envsubst templates
   `$mgn`, `$hvr`, `$fntSize`, `$active_rad`, `$button_rad`)
+- `upstream-reference/` — unmodified upstream HyDE scripts kept for diff
+  reference only (`rofiselect.sh`, `theme.select.sh`, `theme.switch.sh`,
+  `wallpaper-select.sh`). Not needed for the fix, do not install.
 
 ## Install
 
