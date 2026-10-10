@@ -45,9 +45,6 @@ holds unmodified upstream scripts for diffing only.
 
 | File | What it is |
 |---|---|
-| `hyprland/amoled-display-enhancement.md` | AMOLED/OLED display tuning notes |
-| `hyprland/oled-amoled-enhance.frag` | Hyprland screen shader (gamma/contrast/saturation/black-lift) |
-| `hyprland/liquid-glass-theming.md` | Liquid-glass theming notes (waybar, swaync, rofi, kitty) |
 | `hyprland/waybar-autorestart-systemd.md` | Auto-restarting Waybar via systemd |
 | `hyprland/waybar-smart-hide-daemon.md` | Smart-hide cursor zones for Waybar |
 
