@@ -1,0 +1,76 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "proxy": "",
+  "disable_ai": false,
+  "agent": {
+    "sidebar_side": "right",
+    "default_width": 500.0,
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "tabs": {
+    "git_status": false
+  },
+  "title_bar": {
+    "show_branch_status_icon": true
+  },
+  "cursor_shape": "underline",
+  "ui_font_weight": 500.0,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "ui_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_weight": 400.0,
+  "context_servers": {
+    "mcp-server-github": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "github_personal_access_token": "__FILL_IN_YOUR_ZED_GITHUB_TOKEN__"
+      }
+    }
+  },
+  "cli_default_open_behavior": "existing_window",
+  "base_keymap": "VSCode",
+  "agent_servers": {
+    "cline": {
+      "default_config_options": {
+        "auto_approve": true,
+        "model": "dots-studio/dots-3-note-preview:free",
+        "provider": "cline"
+      },
+      "type": "registry"
+    },
+    "antigravity-acp": {
+      "default_config_options": {
+        "mode": "yolo"
+      },
+      "type": "registry"
+    },
+    "opencode": {
+      "default_config_options": {
+        "effort": "high",
+        "model": "opencode/muse-spark-1.3-contributor-free"
+      },
+      "type": "registry"
+    },
+    "codex-acp": {
+      "default_config_options": {
+        "model": "gpt-5.6-terra"
+      },
+      "type": "registry"
+    }
+  },
+  "ui_font_size": 15.0,
+  "buffer_font_size": 15.0,
+  "theme": "Nightfox - blurred",
+}

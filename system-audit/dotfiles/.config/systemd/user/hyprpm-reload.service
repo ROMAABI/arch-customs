@@ -1,0 +1,14 @@
+[Unit]
+Description=Keep Hyprland plugins loaded via hyprpm (no-uwsm, bound to default.target)
+After=default.target
+StartLimitIntervalSec=600
+StartLimitBurst=30
+
+[Service]
+Type=simple
+ExecStart=/home/spix/.config/systemd/user/hyprpm-reload-watch.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

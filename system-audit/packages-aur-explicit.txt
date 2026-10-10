@@ -1,0 +1,10 @@
+antigravity
+beekeeper-studio
+brow6el
+fast-bin
+firebase-tools
+geekbench
+keypunch-git
+mongodb-bin
+pgadmin4
+yay-debug

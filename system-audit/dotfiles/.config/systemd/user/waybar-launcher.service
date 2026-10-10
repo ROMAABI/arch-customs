@@ -1,0 +1,18 @@
+[Unit]
+Description=Launch Waybar via HyDE script (no-uwsm, bound to default.target)
+Documentation=file:///home/spix/.config/waybar/launch-waybar.sh
+After=default.target
+# Hyprland starts after default.target; allow retries if the first attempt
+# runs before the compositor is up.
+StartLimitIntervalSec=600
+StartLimitBurst=30
+
+[Service]
+Type=oneshot
+ExecStart=/home/spix/.config/waybar/launch-waybar.sh
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=15
+
+[Install]
+WantedBy=default.target

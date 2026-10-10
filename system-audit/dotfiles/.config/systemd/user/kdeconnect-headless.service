@@ -1,0 +1,13 @@
+[Unit]
+Description=KDE Connect headless (pre-login)
+After=dbus.socket
+Wants=dbus.socket
+
+[Service]
+Type=exec
+ExecStart=/usr/bin/kdeconnectd
+Environment=QT_QPA_PLATFORM=offscreen
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

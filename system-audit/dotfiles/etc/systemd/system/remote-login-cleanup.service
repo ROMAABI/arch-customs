@@ -1,0 +1,11 @@
+[Unit]
+Description=Remove one-shot SDDM autologin (crash safety)
+Before=sddm.service
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+ExecStart=/bin/rm -f /etc/sddm.conf.d/autologin.conf
+
+[Install]
+WantedBy=graphical.target

@@ -10,6 +10,7 @@ troubleshooting notes for a **Hyprland / HyDE** setup (host: `abix`, user
 |---|---|
 | `power-profile-switch/` | Systemd-based power-profile switching (udev rule + service + installer) |
 | `wlogout-fix/` | Patch for HyDE `logoutlaunch.sh` — logout menu invisible on scaled displays |
+| `system-audit/` | 37-day system audit (packages, dotfiles backup, one-click `setup.sh` restore) |
 | `hyprland/` | Hyprland/HyDE display, theming, and waybar notes + screen shader |
 | `docs/` | System analyses, on-demand service notes, and session logs |
 

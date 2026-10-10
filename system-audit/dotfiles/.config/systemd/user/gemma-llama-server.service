@@ -1,0 +1,12 @@
+[Unit]
+Description=llama.cpp server - Gemma 4 E4B Heretic (GEMMA-TUI)
+After=network.target
+
+[Service]
+Environment=LD_LIBRARY_PATH=%h/.local/lib
+ExecStart=%h/.local/bin/llama-server -m %h/GEMMA-TUI/models/gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M.gguf --host 127.0.0.1 --port 8080 --ctx-size 8192 -t 12
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
